@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard">
+
+ <!--
+    The name attribute of the ruleset tag is displayed
+    when running PHP_CodeSniffer with the -v command line
+    argument. The description tag below is not displayed anywhere
+    except in this file, so it can contain information for
+    developers who may change this file in the future.
+ -->
+ <description>A custom coding standard</description>
+
+ <!--
+    You can hard-code custom php.ini settings into your custom standard.
+    The following tag sets the memory limit to 64M.
+ -->
+ <ini name="memory_limit" value="64M"/>
+
+ <!--
+    Include all sniffs in the PEAR standard. Note that the
+    path to the standard does not have to be specified as the
+    PEAR standard exists inside the PHP_CodeSniffer install
+    directory.
+ -->
+ <rule ref="PEAR"/>
