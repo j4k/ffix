@@ -27,4 +27,4 @@ sed 's/\(.*\)/<exclude-pattern>\1<\/exclude-pattern>/g' >> /tmp/rules.xml
 echo -n '</ruleset>' >> /tmp/rules.xml
 
 echo "Running code style fixer"
-phpcbf --standard=/tmp/rules.xml ./ 
+phpcbf --extensions=php --standard=/tmp/rules.xml ./ 
